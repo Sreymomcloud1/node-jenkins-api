@@ -11,7 +11,7 @@ app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server is running on port ${PORT}`);
 });
 
-// Task 14: Post API
+// Task 14: a POST route
 app.post('/data', (req, res) => {
-    res.json({ message: "Post successful!" });
+    res.send('POST request successful to EC2!');
 });
